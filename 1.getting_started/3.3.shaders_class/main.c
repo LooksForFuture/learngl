@@ -49,10 +49,10 @@ int main(void)
 	/* shader creation
 	   --------------- */
 	vertexShader = glCreateShader(GL_VERTEX_SHADER);
-	lgl_compileShader(vertexShader, "assets/vertex.glsl");
+	lgl_compileShader(vertexShader, "shaders/vertex.glsl");
 
 	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-	lgl_compileShader(fragmentShader, "assets/fragment.glsl");
+	lgl_compileShader(fragmentShader, "shaders/fragment.glsl");
 
 	shaderProgram = glCreateProgram();
 	glAttachShader(shaderProgram, vertexShader);
